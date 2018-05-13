@@ -1,0 +1,1120 @@
+MPLINK 5.00, LINKER
+Linker Map File - Created Sun May 13 16:09:13 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+ .idata_BootPIC18NonJ.o_i    romdata   0x000006    program   0x000000
+          .romdata_main.o    romdata   0x000006    program   0x000000
+.romdata_usb_device_hid.o    romdata   0x000006    program   0x000000
+.idata_usb_device_hid.o_i    romdata   0x000006    program   0x000000
+  .code_usb_descriptors.o       code   0x000006    program   0x000000
+.idata_usb_descriptors.o_i    romdata   0x000006    program   0x000000
+                   .org_0       code   0x000008    program   0x000004
+                   .org_1       code   0x000018    program   0x000008
+                   .cinit    romdata   0x000020    program   0x00000e
+ .romdata_BootPIC18NonJ.o    romdata   0x00002e    program   0x000000
+          .idata_main.o_i    romdata   0x00002e    program   0x000002
+    .romdata_usb_device.o    romdata   0x00002e    program   0x000000
+    .idata_usb_device.o_i    romdata   0x00002e    program   0x000000
+        BOOT_MAIN_SECTION       code   0x000030    program   0x000028
+    .code_BootPIC18NonJ.o       code   0x000058    program   0x000610
+       .code_usb_device.o       code   0x000668    program   0x0005ec
+   .code_usb_device_hid.o       code   0x000c54    program   0x0001a6
+             .code_main.o       code   0x000dfa    program   0x0000fc
+.romdata_usb_descriptors.o    romdata   0x000ef6    program   0x0000bc
+                    .code       code   0x000fb2    program   0x000020
+        FLASH_SIG_SECTION    romdata   0x001006    program   0x000002
+    .config_300000_main.o    romdata   0x300000    program   0x000001
+    .config_300001_main.o    romdata   0x300001    program   0x000001
+    .config_300002_main.o    romdata   0x300002    program   0x000001
+    .config_300003_main.o    romdata   0x300003    program   0x000001
+    .config_300005_main.o    romdata   0x300005    program   0x000001
+    .config_300006_main.o    romdata   0x300006    program   0x000001
+                 .tmpdata      udata   0x000000       data   0x000008
+                MATH_DATA      udata   0x000008       data   0x000000
+   .udata_BootPIC18NonJ.o      udata   0x000060       data   0x000041
+       WriteBufferSection      udata   0x0000a1       data   0x000040
+    OtherVariablesSection      udata   0x0000e1       data   0x000015
+  .udata_usb_device_hid.o      udata   0x0000f6       data   0x00000a
+                   .stack      udata   0x000300       data   0x000060
+      .udata_usb_device.o      udata   0x000360       data   0x00002a
+                  USB_BDT      udata   0x000400       data   0x0000ac
+         SomeSectionName3      udata   0x0004ac       data   0x000041
+            .udata_main.o      udata   0x0004ed       data   0x000003
+            .idata_main.o      idata   0x0004f0       data   0x000002
+ .udata_usb_descriptors.o      udata   0x0004f2       data   0x000000
+ .idata_usb_descriptors.o      idata   0x0004f2       data   0x000000
+      .idata_usb_device.o      idata   0x0004f2       data   0x000000
+  .idata_usb_device_hid.o      idata   0x0004f2       data   0x000000
+   .idata_BootPIC18NonJ.o      idata   0x0004f2       data   0x000000
+              SFR_BANKED0      udata   0x000f57       data   0x000007
+            SFR_UNBANKED0      udata   0x000f60       data   0x0000a0
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000008    0x00000b      
+                            0x000018    0x000fd1      
+                            0x001006    0x001007      
+                            0x300000    0x300003      
+                            0x300005    0x300006      
+            4044 out of 33048 program addresses used, program memory utilization is 12%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+           BlinkUSBStatus   0x000e9a    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+                 BootMain   0x000030    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+                    CFG01   0x000f08    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+            ClearWatchdog   0x000bc2    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+             DelayRoutine   0x000bac    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+    DoFlashSignatureCheck   0x000e1a    program     static                          
+       FlashSignatureWord   0x001006    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+      HIDGetReportHandler   0x000d1c    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                HIDInitEP   0x000d20    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+              HIDRxReport   0x000d98    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+      HIDSetReportHandler   0x000d1e    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+              HIDTxReport   0x000d4c    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+         InitializeSystem   0x000e60    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+        LoadBDTandSetUOWN   0x000b52    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+          LowVoltageCheck   0x000ebe    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+                ProcessIO   0x00006c    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+       ResetDeviceCleanly   0x00049e    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                SignFlash   0x0003cc    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+   TableReadPostIncrement   0x00063e    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+       USBCBCheckOtherReq   0x000ef2    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+              USBCBInitEP   0x000ee2    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+             USBCBSuspend   0x000ecc    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+     USBCBWakeFromSuspend   0x000ec0    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+        USBCheckBusStatus   0x0006a0    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+       USBCheckHIDRequest   0x000c54    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+       USBCheckStdRequest   0x000952    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+ USBCtrlEPServiceComplete   0x0008c2    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+      USBCtrlTrfInHandler   0x00081c    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+   USBCtrlTrfSetupHandler   0x0007e4    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+      USBCtrlTrfTxService   0x000860    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+            USBDeviceInit   0x000668    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+           USBDeviceTasks   0x0006ae    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+  USBDisableWithLongDelay   0x000b9a    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+  USBProtocolResetHandler   0x0007aa    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+            USBSoftAttach   0x000674    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+            USBSoftDetach   0x000692    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+  USBStdFeatureReqHandler   0x000afa    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+      USBStdGetDscHandler   0x0009f2    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+   USBStdGetStatusHandler   0x000a9c    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+      USBStdSetCfgHandler   0x000a5e    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+               USBSuspend   0x00077a    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+       USBWakeFromSuspend   0x000798    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+               USB_SD_Ptr   0x000fac    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+        UnlockAndActivate   0x000614    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                 UserInit   0x000058    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+          WriteConfigBits   0x000588    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+              WriteEEPROM   0x0005d4    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+          WriteFlashBlock   0x0004aa    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+         ___else_lbl00003   0x000e16    program     static                          
+         ___else_lbl00058   0x000526    program     static                          
+         ___else_lbl00060   0x00052c    program     static                          
+          ___for_lbl00046   0x00040a    program     static                          
+          ___for_lbl00047   0x000410    program     static                          
+          ___for_lbl00048   0x0003d8    program     static                          
+          ___for_lbl00055   0x000534    program     static                          
+          ___for_lbl00056   0x00053a    program     static                          
+          ___for_lbl00061   0x0004f4    program     static                          
+          ___for_lbl00062   0x000580    program     static                          
+          ___for_lbl00063   0x000586    program     static                          
+          ___for_lbl00064   0x00054c    program     static                          
+          ___for_lbl00066   0x0005cc    program     static                          
+          ___for_lbl00067   0x0005d2    program     static                          
+          ___for_lbl00068   0x000598    program     static                          
+           ___if_lbl00002   0x000e1a    program     static                          
+           ___if_lbl00004   0x000e5a    program     static                          
+           ___if_lbl00005   0x000e5a    program     static                          
+           ___if_lbl00051   0x000484    program     static                          
+           ___if_lbl00052   0x000496    program     static                          
+           ___if_lbl00057   0x00052a    program     static                          
+           ___if_lbl00059   0x000534    program     static                          
+           ___if_lbl00076   0x00062c    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00001   0x000e5e    program     static                          
+       ___return_lbl00006   0x000056    program     static                          
+       ___return_lbl00018   0x000ee0    program     static                          
+       ___return_lbl00045   0x00049c    program     static                          
+       ___return_lbl00053   0x0004a8    program     static                          
+       ___return_lbl00054   0x000586    program     static                          
+       ___return_lbl00065   0x0005d2    program     static                          
+       ___return_lbl00073   0x00063c    program     static                          
+       ___return_lbl00079   0x000640    program     static                          
+       ___return_lbl00129   0x000bc4    program     static                          
+        ___while_lbl00007   0x000042    program     static                          
+        ___while_lbl00008   0x000056    program     static                          
+        ___while_lbl00019   0x000ed0    program     static                          
+        ___while_lbl00020   0x000ee0    program     static                          
+        ___while_lbl00049   0x000440    program     static                          
+        ___while_lbl00050   0x00049c    program     static                          
+        ___while_lbl00074   0x000626    program     static                          
+        ___while_lbl00075   0x00062a    program     static                          
+        ___while_lbl00077   0x000636    program     static                          
+        ___while_lbl00078   0x00063a    program     static                          
+               __config_0   0x300000    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+               __config_1   0x300001    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+               __config_2   0x300002    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+               __config_3   0x300003    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+               __config_4   0x300005    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+               __config_5   0x300006    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+                   __pa_0   0x000bc6    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_0   0x000642    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                   __pa_0   0x000df2    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                   __pa_1   0x000bd0    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_1   0x000652    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                   __pa_2   0x00065c    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                   __pa_2   0x000bec    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_3   0x000bfa    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_4   0x000c12    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_5   0x000c1c    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_6   0x000c2c    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_7   0x000c3c    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_8   0x000c4a    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+               __tmplbl_0   0x000edc    program     static                          
+               __tmplbl_1   0x000ed6    program     static                          
+            __zero_memory   0x000fb2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   _entry   0x000000    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+                compare_l   0x000fc8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               device_dsc   0x000ef6    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+                hid_rpt01   0x000f8f    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+                   loop_h   0x000fc0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   loop_l   0x000fca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     main   0x000dfa    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+                    sd000   0x000f31    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+                    sd001   0x000f35    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+                    sd002   0x000f69    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+               zero_block   0x000fc0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ACTCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ACTCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ANSELA   0x000f5b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ANSELAbits   0x000f5b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ANSELB   0x000f5c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ANSELBbits   0x000f5c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ANSELC   0x000f5d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ANSELCbits   0x000f5d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 BAUDCON1   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             BAUDCON1bits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+           BDTIndexToLoad   0x000385       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                BootState   0x0000e1       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+        BufferedDataIndex   0x0000e4       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+     BytesTakenFromBuffer   0x0000f1       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  CCP2CON   0x000f97       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              CCP2CONbits   0x000f97       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    CCPR2   0x000f90       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   CCPR2H   0x000f91       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   CCPR2L   0x000f90       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  CCPTMRS   0x000f59       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              CCPTMRSbits   0x000f59       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  CM1CON0   0x000f98       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              CM1CON0bits   0x000f98       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  CM2CON0   0x000f99       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              CM2CON0bits   0x000f99       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  CM2CON1   0x000f9a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              CM2CON1bits   0x000f9a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 CTMUCON0   0x000f8f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             CTMUCON0bits   0x000f8f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 CTMUCON1   0x000f8e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             CTMUCON1bits   0x000f8e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 CTMUCONH   0x000f8f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             CTMUCONHbits   0x000f8f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 CTMUCONL   0x000f8e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             CTMUCONLbits   0x000f8e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 CTMUICON   0x000f88       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             CTMUICONbits   0x000f88       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+         ConfigsLockValue   0x0000e9       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+       ConfigurationIndex   0x0004ef       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+         CorrectionFactor   0x0000f2       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                  Counter   0x00037c       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+              CtrlTrfData   0x000424       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              DelayAmount   0x000388       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+     DeviceIsSoftDetached   0x00037e       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 ECCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             ECCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 ECCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             ECCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 ECCP2CON   0x000f97       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             ECCP2CONbits   0x000f97       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+            EP0OutEvenBuf   0x000414       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+             EP0OutOddBuf   0x00041c       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+ EP0OutOddNeedsArmingNext   0x000372       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+         ErasePageTracker   0x0000e2       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  HLVDCON   0x000f9c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              HLVDCONbits   0x000f9c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     IOCB   0x000f86       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 IOCBbits   0x000f86       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     IOCC   0x000f87       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 IOCCbits   0x000f87       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     IPR3   0x000fa5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 IPR3bits   0x000fa5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  OSCCON2   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              OSCCON2bits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PIE3   0x000fa3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PIE3bits   0x000fa3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PIR3   0x000fa4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PIR3bits   0x000fa4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PMD0   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PMD0bits   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PMD1   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PMD1bits   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                      PR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PSTR1CON   0x000fb9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             PSTR1CONbits   0x000fb9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             PacketFromPC   0x000060       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+               PacketToPC   0x0004ac       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+        ProgrammedPointer   0x0000e5       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+        ProgrammingBuffer   0x0000a1       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   RCREG1   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   RCSTA1   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               RCSTA1bits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SLRCON   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SLRCONbits   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SPBRG1   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SPBRG1bits   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SPBRGH   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SPBRGH1   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SPBRGH1bits   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SPBRGHbits   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                SPBRGbits   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SRCON0   0x000f58       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SRCON0bits   0x000f58       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SRCON1   0x000f57       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SRCON1bits   0x000f57       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSP1ADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SSP1ADDbits   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSP1BUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 SSP1CON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             SSP1CON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 SSP1CON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             SSP1CON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 SSP1CON3   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             SSP1CON3bits   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSP1MSK   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SSP1MSKbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 SSP1STAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             SSP1STATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SSPADDbits   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SSPCON   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSPCON3   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SSPCON3bits   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SSPCONbits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SSPMSK   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SSPMSKbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    STCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                STCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 SetupPkt   0x00036a       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   T1GCON   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               T1GCONbits   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    T2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                T2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   T3GCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               T3GCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     TMR2   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   TXREG1   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   TXSTA1   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               TXSTA1bits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  TempBDT   0x000373       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                    UADDR   0x000f63       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UADDRbits   0x000f63       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UCFG   0x000f62       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UCFGbits   0x000f62       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UCON   0x000f60       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UCONbits   0x000f60       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEIE   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEIEbits   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEIR   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEIRbits   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP0   0x000f6a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP0bits   0x000f6a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP1   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UEP10   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UEP10bits   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UEP11   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UEP11bits   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UEP12   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UEP12bits   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UEP13   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UEP13bits   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UEP14   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UEP14bits   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UEP15   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UEP15bits   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP1bits   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP2   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP2bits   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP3   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP3bits   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP4   0x000f6e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP4bits   0x000f6e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP5   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP5bits   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP6   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP6bits   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP7   0x000f71       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP7bits   0x000f71       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP8   0x000f72       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP8bits   0x000f72       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP9   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP9bits   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UFRM   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UFRMH   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UFRMHbits   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UFRML   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UFRMLbits   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                      UIE   0x000f64       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  UIESave   0x000382       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                  UIEbits   0x000f64       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                      UIR   0x000f65       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  UIRbits   0x000f65       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    USTAT   0x000f61       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                USTATSave   0x00037b       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                USTATbits   0x000f61       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UnlockKey   0x0000f5       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                 VREFCON0   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             VREFCON0bits   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 VREFCON1   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             VREFCON1bits   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 VREFCON2   0x000f7b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             VREFCON2bits   0x000f7b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  VREGCON   0x000f5a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              VREGCONbits   0x000f5a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     WPUB   0x000f85       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 WPUBbits   0x000f85       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+         __DelayRoutine:0   0x000388       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+          __HIDRxReport:0   0x0000fd       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+          __HIDRxReport:1   0x0000ff       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+          __HIDTxReport:0   0x0000f9       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+          __HIDTxReport:1   0x0000fb       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+    __LoadBDTandSetUOWN:0   0x000385       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+          __USBCBInitEP:0   0x0004ef       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+    __UnlockAndActivate:0   0x0000f5       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                  __tmp_0   0x000000       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+                  __tmp_0   0x000000       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                  __tmp_0   0x000000       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+          active_protocol   0x0000f7       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+              bTRNIFCount   0x000360       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   buffer   0x0000f9       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                   buffer   0x0000fd       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+            bytes_to_send   0x000383       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+   ctrl_trf_session_owner   0x000362       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+           ctrl_trf_state   0x000361       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                    ep0Bi   0x000408       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                ep0BoEven   0x000400       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                 ep0BoOdd   0x000404       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                    ep1Bi   0x000410       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                    ep1Bo   0x00040c       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+            hid_report_in   0x00046c       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+           hid_report_out   0x00042c       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+           hid_rpt_rx_len   0x0000f8       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                        i   0x0000f4       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                        i   0x0000ea       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                        i   0x0000f3       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                        i   0x0000f0       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                        i   0x0000ed       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                        i   0x0000fc       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                        i   0x000384       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                        i   0x000381       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                idle_rate   0x0000f6       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                led_count   0x0004f0       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+                      len   0x0000ff       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                      len   0x0000fb       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                pBDTEntry   0x00037f       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                pBDTEntry   0x000386       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                     pDst   0x000365       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                     pROM   0x0000ee       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                     pROM   0x0000eb       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                     pSrc   0x000363       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+         short_pkt_status   0x000369       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+       uint_delay_counter   0x0004ed       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+           usb_active_cfg   0x000379       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+             usb_alt_intf   0x00037a       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+         usb_device_state   0x000377       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                 usb_stat   0x000378       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   wCount   0x000367       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+       ___return_lbl00000   0x000004    program     static                          
+                 BootMain   0x000030    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+        ___while_lbl00007   0x000042    program     static                          
+       ___return_lbl00006   0x000056    program     static                          
+        ___while_lbl00008   0x000056    program     static                          
+                 UserInit   0x000058    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                ProcessIO   0x00006c    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                SignFlash   0x0003cc    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+          ___for_lbl00048   0x0003d8    program     static                          
+          ___for_lbl00046   0x00040a    program     static                          
+          ___for_lbl00047   0x000410    program     static                          
+        ___while_lbl00049   0x000440    program     static                          
+           ___if_lbl00051   0x000484    program     static                          
+           ___if_lbl00052   0x000496    program     static                          
+        ___while_lbl00050   0x00049c    program     static                          
+       ___return_lbl00045   0x00049c    program     static                          
+       ResetDeviceCleanly   0x00049e    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+       ___return_lbl00053   0x0004a8    program     static                          
+          WriteFlashBlock   0x0004aa    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+          ___for_lbl00061   0x0004f4    program     static                          
+         ___else_lbl00058   0x000526    program     static                          
+           ___if_lbl00057   0x00052a    program     static                          
+         ___else_lbl00060   0x00052c    program     static                          
+           ___if_lbl00059   0x000534    program     static                          
+          ___for_lbl00055   0x000534    program     static                          
+          ___for_lbl00056   0x00053a    program     static                          
+          ___for_lbl00064   0x00054c    program     static                          
+          ___for_lbl00062   0x000580    program     static                          
+          ___for_lbl00063   0x000586    program     static                          
+       ___return_lbl00054   0x000586    program     static                          
+          WriteConfigBits   0x000588    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+          ___for_lbl00068   0x000598    program     static                          
+          ___for_lbl00066   0x0005cc    program     static                          
+          ___for_lbl00067   0x0005d2    program     static                          
+       ___return_lbl00065   0x0005d2    program     static                          
+              WriteEEPROM   0x0005d4    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+        UnlockAndActivate   0x000614    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+        ___while_lbl00074   0x000626    program     static                          
+        ___while_lbl00075   0x00062a    program     static                          
+           ___if_lbl00076   0x00062c    program     static                          
+        ___while_lbl00077   0x000636    program     static                          
+        ___while_lbl00078   0x00063a    program     static                          
+       ___return_lbl00073   0x00063c    program     static                          
+   TableReadPostIncrement   0x00063e    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+       ___return_lbl00079   0x000640    program     static                          
+                   __pa_0   0x000642    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                   __pa_1   0x000652    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                   __pa_2   0x00065c    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+            USBDeviceInit   0x000668    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+            USBSoftAttach   0x000674    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+            USBSoftDetach   0x000692    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+        USBCheckBusStatus   0x0006a0    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+           USBDeviceTasks   0x0006ae    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+               USBSuspend   0x00077a    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+       USBWakeFromSuspend   0x000798    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+  USBProtocolResetHandler   0x0007aa    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+   USBCtrlTrfSetupHandler   0x0007e4    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+      USBCtrlTrfInHandler   0x00081c    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+      USBCtrlTrfTxService   0x000860    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+ USBCtrlEPServiceComplete   0x0008c2    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+       USBCheckStdRequest   0x000952    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+      USBStdGetDscHandler   0x0009f2    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+      USBStdSetCfgHandler   0x000a5e    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+   USBStdGetStatusHandler   0x000a9c    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+  USBStdFeatureReqHandler   0x000afa    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+        LoadBDTandSetUOWN   0x000b52    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+  USBDisableWithLongDelay   0x000b9a    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+             DelayRoutine   0x000bac    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+            ClearWatchdog   0x000bc2    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+       ___return_lbl00129   0x000bc4    program     static                          
+                   __pa_0   0x000bc6    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_1   0x000bd0    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_2   0x000bec    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_3   0x000bfa    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_4   0x000c12    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_5   0x000c1c    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_6   0x000c2c    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_7   0x000c3c    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   __pa_8   0x000c4a    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+       USBCheckHIDRequest   0x000c54    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+      HIDGetReportHandler   0x000d1c    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+      HIDSetReportHandler   0x000d1e    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                HIDInitEP   0x000d20    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+              HIDTxReport   0x000d4c    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+              HIDRxReport   0x000d98    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                   __pa_0   0x000df2    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                     main   0x000dfa    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+         ___else_lbl00003   0x000e16    program     static                          
+           ___if_lbl00002   0x000e1a    program     static                          
+    DoFlashSignatureCheck   0x000e1a    program     static                          
+           ___if_lbl00004   0x000e5a    program     static                          
+           ___if_lbl00005   0x000e5a    program     static                          
+       ___return_lbl00001   0x000e5e    program     static                          
+         InitializeSystem   0x000e60    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+           BlinkUSBStatus   0x000e9a    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+          LowVoltageCheck   0x000ebe    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+     USBCBWakeFromSuspend   0x000ec0    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+             USBCBSuspend   0x000ecc    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+        ___while_lbl00019   0x000ed0    program     static                          
+               __tmplbl_1   0x000ed6    program     static                          
+               __tmplbl_0   0x000edc    program     static                          
+       ___return_lbl00018   0x000ee0    program     static                          
+        ___while_lbl00020   0x000ee0    program     static                          
+              USBCBInitEP   0x000ee2    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+       USBCBCheckOtherReq   0x000ef2    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+               device_dsc   0x000ef6    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+                    CFG01   0x000f08    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+                    sd000   0x000f31    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+                    sd001   0x000f35    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+                    sd002   0x000f69    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+                hid_rpt01   0x000f8f    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+               USB_SD_Ptr   0x000fac    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_descriptors.c
+            __zero_memory   0x000fb2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   loop_h   0x000fc0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               zero_block   0x000fc0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                compare_l   0x000fc8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   loop_l   0x000fca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+       FlashSignatureWord   0x001006    program     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+               __config_0   0x300000    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+               __config_1   0x300001    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+               __config_2   0x300002    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+               __config_3   0x300003    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+               __config_4   0x300005    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+               __config_5   0x300006    program     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+                  __tmp_0   0x000000       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+                  __tmp_0   0x000000       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                  __tmp_0   0x000000       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+             PacketFromPC   0x000060       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+        ProgrammingBuffer   0x0000a1       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                BootState   0x0000e1       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+         ErasePageTracker   0x0000e2       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+        BufferedDataIndex   0x0000e4       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+        ProgrammedPointer   0x0000e5       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+         ConfigsLockValue   0x0000e9       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                        i   0x0000ea       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                     pROM   0x0000eb       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                        i   0x0000ed       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                     pROM   0x0000ee       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                        i   0x0000f0       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+     BytesTakenFromBuffer   0x0000f1       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+         CorrectionFactor   0x0000f2       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                        i   0x0000f3       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                        i   0x0000f4       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+    __UnlockAndActivate:0   0x0000f5       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                UnlockKey   0x0000f5       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+                idle_rate   0x0000f6       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+          active_protocol   0x0000f7       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+           hid_rpt_rx_len   0x0000f8       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                   buffer   0x0000f9       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+          __HIDTxReport:0   0x0000f9       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+          __HIDTxReport:1   0x0000fb       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                      len   0x0000fb       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                        i   0x0000fc       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+          __HIDRxReport:0   0x0000fd       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                   buffer   0x0000fd       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+                      len   0x0000ff       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+          __HIDRxReport:1   0x0000ff       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device_hid.c
+              bTRNIFCount   0x000360       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+           ctrl_trf_state   0x000361       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+   ctrl_trf_session_owner   0x000362       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                     pSrc   0x000363       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                     pDst   0x000365       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                   wCount   0x000367       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+         short_pkt_status   0x000369       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                 SetupPkt   0x00036a       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+ EP0OutOddNeedsArmingNext   0x000372       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                  TempBDT   0x000373       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+         usb_device_state   0x000377       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                 usb_stat   0x000378       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+           usb_active_cfg   0x000379       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+             usb_alt_intf   0x00037a       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                USTATSave   0x00037b       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                  Counter   0x00037c       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+     DeviceIsSoftDetached   0x00037e       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                pBDTEntry   0x00037f       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                        i   0x000381       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                  UIESave   0x000382       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+            bytes_to_send   0x000383       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                        i   0x000384       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+    __LoadBDTandSetUOWN:0   0x000385       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+           BDTIndexToLoad   0x000385       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                pBDTEntry   0x000386       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+         __DelayRoutine:0   0x000388       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+              DelayAmount   0x000388       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                ep0BoEven   0x000400       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                 ep0BoOdd   0x000404       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                    ep0Bi   0x000408       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                    ep1Bo   0x00040c       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+                    ep1Bi   0x000410       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+            EP0OutEvenBuf   0x000414       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+             EP0OutOddBuf   0x00041c       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+              CtrlTrfData   0x000424       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+           hid_report_out   0x00042c       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+            hid_report_in   0x00046c       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\usb_device.c
+               PacketToPC   0x0004ac       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\BootPIC18NonJ.c
+       uint_delay_counter   0x0004ed       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+       ConfigurationIndex   0x0004ef       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+          __USBCBInitEP:0   0x0004ef       data     extern F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+                led_count   0x0004f0       data     static F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\fw\Bootloader\src\main.c
+               SRCON1bits   0x000f57       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SRCON1   0x000f57       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SRCON0   0x000f58       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SRCON0bits   0x000f58       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              CCPTMRSbits   0x000f59       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  CCPTMRS   0x000f59       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  VREGCON   0x000f5a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              VREGCONbits   0x000f5a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ANSELA   0x000f5b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ANSELAbits   0x000f5b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ANSELB   0x000f5c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ANSELBbits   0x000f5c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ANSELC   0x000f5d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ANSELCbits   0x000f5d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UCONbits   0x000f60       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UCON   0x000f60       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    USTAT   0x000f61       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                USTATbits   0x000f61       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UCFG   0x000f62       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UCFGbits   0x000f62       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UADDRbits   0x000f63       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UADDR   0x000f63       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                      UIE   0x000f64       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  UIEbits   0x000f64       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                      UIR   0x000f65       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  UIRbits   0x000f65       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEIE   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEIEbits   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEIR   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEIRbits   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UFRML   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UFRMLbits   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UFRM   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UFRMH   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UFRMHbits   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP0bits   0x000f6a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP0   0x000f6a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP1   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP1bits   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP2bits   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP2   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP3bits   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP3   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP4bits   0x000f6e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP4   0x000f6e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP5bits   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP5   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP6bits   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP6   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP7bits   0x000f71       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP7   0x000f71       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP8bits   0x000f72       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP8   0x000f72       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 UEP9bits   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     UEP9   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UEP10   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UEP10bits   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UEP11   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UEP11bits   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UEP12bits   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UEP12   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UEP13bits   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UEP13   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UEP14   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UEP14bits   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                UEP15bits   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    UEP15   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SLRCONbits   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SLRCON   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             VREFCON2bits   0x000f7b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 VREFCON2   0x000f7b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             VREFCON1bits   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 VREFCON1   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             VREFCON0bits   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 VREFCON0   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PMD0   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PMD0bits   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PMD1bits   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PMD1   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 WPUBbits   0x000f85       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     WPUB   0x000f85       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     IOCB   0x000f86       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 IOCBbits   0x000f86       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 IOCCbits   0x000f87       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     IOCC   0x000f87       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             CTMUICONbits   0x000f88       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 CTMUICON   0x000f88       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             CTMUCONLbits   0x000f8e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 CTMUCONL   0x000f8e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             CTMUCON1bits   0x000f8e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 CTMUCON1   0x000f8e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             CTMUCONHbits   0x000f8f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 CTMUCONH   0x000f8f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             CTMUCON0bits   0x000f8f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 CTMUCON0   0x000f8f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   CCPR2L   0x000f90       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    CCPR2   0x000f90       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   CCPR2H   0x000f91       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             ECCP2CONbits   0x000f97       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  CCP2CON   0x000f97       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              CCP2CONbits   0x000f97       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 ECCP2CON   0x000f97       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  CM1CON0   0x000f98       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              CM1CON0bits   0x000f98       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              CM2CON0bits   0x000f99       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  CM2CON0   0x000f99       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              CM2CON1bits   0x000f9a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  CM2CON1   0x000f9a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              HLVDCONbits   0x000f9c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  HLVDCON   0x000f9c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PIE3   0x000fa3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PIE3bits   0x000fa3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PIR3   0x000fa4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PIR3bits   0x000fa4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 IPR3bits   0x000fa5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     IPR3   0x000fa5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   RCSTA1   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               RCSTA1bits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   TXSTA1   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               TXSTA1bits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   TXREG1   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   RCREG1   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                SPBRGbits   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SPBRG1bits   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SPBRG1   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SPBRGH   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SPBRGH1   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SPBRGH1bits   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SPBRGHbits   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               T3GCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   T3GCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ACTCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ACTCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                STCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    STCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 ECCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             ECCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             BAUDCON1bits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 BAUDCON1   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 PSTR1CON   0x000fb9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             PSTR1CONbits   0x000fb9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                T2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    T2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                      PR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     TMR2   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 ECCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             ECCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             SSP1CON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 SSP1CON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SSPCON   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             SSP1CON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 SSP1CON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SSPCONbits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 SSP1STAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             SSP1STATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSP1ADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SSP1ADDbits   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SSPADDbits   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSP1BUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   SSPMSK   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               SSPMSKbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSP1MSK   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SSP1MSKbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  SSPCON3   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              SSPCON3bits   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 SSP1CON3   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+             SSP1CON3bits   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   T1GCON   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               T1GCONbits   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              OSCCON2bits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  OSCCON2   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f25k50.asm
+
+
