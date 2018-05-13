@@ -1,0 +1,20 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~DE-080717.PrjPcb|ReportField=ProjectFullPath~F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\hw\DE-080717\DE-080717.PrjPcb|ReportField=Title~Bill of Materials For PCB Document [DE-080717.PcbDoc]|ReportField=TotalQuantity~26|ReportField=ReportTime~15:18:34|ReportField=ReportDate~13.5.2018.|ReportField=ReportDateTime~13.5.2018. 15:18:34|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=DataSourceFileName~DE-080717.PcbDoc|ReportField=DataSourceFullPath~F:\SkyDrive\OtvoreniProjekti\USB_CardReaderWiter\hw\DE-080717\DE-080717.PcbDoc|ReportField=PCBConfigurationName~Default Configuration|ReportField=Item~|ReportField=ItemRevision~|ReportField=ItemAndRevision~|ReportField=ItemRevisionBase~|ReportField=ItemRevisionLevel1~|ReportField=ItemRevisionLevel2~|ReportField=ItemRevisionLevel1AndBase~|ReportField=ItemRevisionLevel2AndLevel1~
+1|10nF|Ceramic Chip Capacitor - Standard|C1, C2, C6|0603|C0603|3
+2|10uF|Ceramic Chip Capacitor - Standard|C3, C4|0805|C0805|2
+3|100nF|Ceramic Chip Capacitor - Standard|C5, C7, C8, C10|0603|C0603|4
+4|470nF|Ceramic Chip Capacitor - Standard|C9|0805|C0805|1
+5|10uH|SMD-Multilayer Inductor WE-MI, L = 8.20 µH|L1|SMD-0805|744790282|1
+6|BUZZER|Header, 2-Pin|P1|HDR1X2|Header 2|1
+7|USB|USB connector B mini|P2|USB mini B|USB mini B|1
+8|RC522 CARD RW|Header, 8-Pin|P3|HDR1X8|Header 8|1
+9|PICKIT3_ICSP|Header, 5-Pin|P4|HDR1X5|Header 5|1
+10|BLUE LED|Header, 2-Pin|P5|HDR1X2|Header 2|1
+11|RED LED|Header, 2-Pin|P6|HDR1X2|Header 2|1
+12|MMBT2222|NPN General-purpose Transistor|Q1|SOT23_N|BC817|1
+13|1K|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R1|ERA-0603|ERAV|1
+14|100R|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R2, R6|ERA-0603|ERAV|2
+15|100K|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R3|ERA-0603|ERAV|1
+16|330R|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R4|ERA-0603|ERAV|1
+17|10K|Metal Film Thermosensitive Chip Resistor, 0.56 Ohm to 10k Ohm Range, 5% Tolerance, 0603 Size, 0.063 W|R5|ERA-0603|ERAV|1
+18|REG1117-3.3|800mA and 1A Low Dropout Positive Regulator 2.85V, 3.3V, 5V, and Adjustable|U1|ZZ311|REG1117-3.3|1
+19|PIC18F25K50-I/SO|Low-Power, High-Performance Microcontroller with XLP Technology, 48 MHz, 24 I/O, -40 to 85 degC, 28-pin SOIC (SO28), Tube|U2|MCHP-SOIC-SO28_N|PIC18F25K50-I/SO|1
